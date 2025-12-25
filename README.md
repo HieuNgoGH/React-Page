@@ -1,0 +1,1 @@
+This is a project web app that is for a giveaway page that I will be conducting. It will use React with Postgres. Users can sign up for the giveaway and it will be in the form of raffles. Giveaways can be computer parts, custom built desktops, gift cards, etc. 
