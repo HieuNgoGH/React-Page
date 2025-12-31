@@ -22,12 +22,27 @@
 
             function HomePage() {
                 const names = ['Championship White', 'React', 'Next.js']
+
+                const [likes, setLikes] = React.useState(0);
+
+                function onClick() {
+                    alert(`I got clicked ${likes} times.`);
+                    setLikes(likes + 1);
+                }
+
                 return (
                     <div>
-                        <Header title= {names[2]} />
-                        <Header title= {names[0]} />
+                        <Header title = 'Honda Type R' />
+                        <ul>
+                            {
+                                names.map((name) => (
+                                    <li> {name} </li>
+                                ))
+                            }
+                        </ul>
+                        <button onClick= {onClick} > likes{likes} </button>
                     </div>
-                );
+            );
             }
             const root = ReactDOM.createRoot(app);
             root.render(<HomePage />);
